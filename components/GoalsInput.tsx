@@ -23,6 +23,7 @@ const GoalsInput: React.FC<IGoalsInput> = ({ addGoal }) => {
         onChangeText={setEnteredGoal}
         value={enteredGoal}
         style={styles.textInput}
+        onSubmitEditing={handleSubmit}
       />
       <Button color="#5bb7d9" title="Add" onPress={handleSubmit} />
     </View>

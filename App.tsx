@@ -11,7 +11,7 @@ export default function App() {
       <View style={styles.goalsInput}>
         <GoalsInput
           addGoal={(goal: string) =>
-            setGoals((prev) => [...prev, { id: `${prev.length}`, goal }])
+            setGoals((prev) => [{ id: `${Math.random()}`, goal }, ...prev])
           }
         />
       </View>
