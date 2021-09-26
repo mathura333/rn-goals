@@ -19,6 +19,7 @@ const GoalsInput: React.FC<IGoalsInput> = ({ addGoal }) => {
     <View style={styles.goalsInput}>
       <TextInput
         placeholder="Your Goal"
+        placeholderTextColor="#0b855a"
         onChangeText={setEnteredGoal}
         value={enteredGoal}
         style={styles.textInput}
@@ -29,12 +30,17 @@ const GoalsInput: React.FC<IGoalsInput> = ({ addGoal }) => {
 };
 const styles = StyleSheet.create({
   goalsInput: {
+    width: '90%',
+    minHeight: 50,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
+    alignSelf: 'center',
   },
   textInput: {
-    borderColor: 'black',
+    borderColor: '#0b855a',
+    height: 55,
+    fontSize: 25,
     borderWidth: 1,
     borderRadius: 5,
     padding: 10,
